@@ -1,7 +1,25 @@
 plugins { id 'com.android.application' }
+
 android {
     namespace 'com.botshope.app'
     compileSdk 33
-    defaultConfig { applicationId "com.botshope.app"; minSdk 24; targetSdk 33; versionCode 1; versionName "1.0" }
-    compileOptions { sourceCompatibility JavaVersion.VERSION_1_8; targetCompatibility JavaVersion.VERSION_1_8 }
+    defaultConfig { 
+        applicationId "com.botshope.app"
+        minSdk 24
+        targetSdk 33
+        versionCode 1
+        versionName "1.0" 
+    }
+    compileOptions { 
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8 
+    }
+}
+
+repositories {
+    google()
+    mavenCentral()
+}
+
+dependencies {
 }
